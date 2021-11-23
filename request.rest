@@ -1,0 +1,34 @@
+GET http://127.0.0.1:8000/api/transaction
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/api/transaction
+Accept: application/json
+Content-Type: application/json
+
+{
+    "title": "Hadiah",
+    "amount": 672728,
+    "type": "revenue"
+}
+
+###
+PUT http://127.0.0.1:8000/api/transaction/3
+Accept: application/json
+Content-Type: application/json
+
+{
+    "title": "Hadiah Updated",
+    "amount": 100,
+    "type": "expense"
+}
+
+###
+GET http://127.0.0.1:8000/api/transaction/4
+Accept: application/json
+Content-Type: application/json
+
+###
+DELETE http://127.0.0.1:8000/api/transaction/1
+Accept: application/json
+Content-Type: application/json

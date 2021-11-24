@@ -7,7 +7,7 @@
 
                 <div class="card rounded shadow">
                     <div class="card-header">
-                        Creat Transaction
+                        Create Transaction
                     </div>
                     <div class="card-body">
                         <form @submit.prevent="store()">

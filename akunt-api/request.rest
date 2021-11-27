@@ -32,3 +32,25 @@ Content-Type: application/json
 DELETE http://127.0.0.1:8000/api/transaction/1
 Accept: application/json
 Content-Type: application/json
+
+###
+POST http://localhost:8000/api/register
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "deniz",
+    "email": "deniz@gmail.com",
+    "password": "amikom1905",
+    "confirm_password": "amikom1905"
+}
+
+###
+POST http://localhost:8000/api/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email": "deniz@gmail.com",
+    "password": "amikom1905"
+}
